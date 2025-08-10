@@ -12,32 +12,34 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
         <a href="#" class="logo">Babo</a>
 
         <nav class="navbar">
-            <a href="#" style="--i:1;" class="active">Home</a>
-            <a href="#" style="--i:2;">About</a>
-            <a href="#" style="--i:3;">Skills</a>
-            <a href="#" style="--i:4;">Certificates</a>
-            <a href="#" style="--i:5;">Contact</a>
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#skills" style="--i:3;">Skills</a>
+            <a href="#certificates" style="--i:4;">Certificates</a>
+            <a href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Atharva Ajansondkar</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab autem repellat reiciendis ipsam
-                perspiciatis.</p>
+            <p>Cybersecurity & Post‑Quantum Cryptography enthusiast specialising in penetration testing, incident 
+               response, SOC operations, and cryptographic resilience against emerging quantum threats.</p>
             <div class="social-media">
                 <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:8;"><i class='bx bxl-twitter'></i></a>
                 <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://linkedin.com/" style="--i:10;"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="Atharva_Ajansondkar_Resume_2025.pdf" class="btn" download>Download CV</a>
         </div>
 
         <div class="home-img">
@@ -45,6 +47,71 @@
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <ul>
+                <li>Incident Response & Recovery</li>
+                <li>Penetration Testing & Vulnerability Management</li>
+                <li>Network & Application Security</li>
+                <li>Compliance Monitoring & Auditing</li>
+                <li>Splunk, Suricata, ELK Stack, Wazuh</li>
+                <li>Linux Systems & Bash Scripting</li>
+                <li>MITRE ATT&CK Framework</li>
+                <li>Endpoint Detection & Response</li>
+                <li>OWASP Top 10 Testing</li>
+                <li>Python Development</li>
+                <li>AWS GuardDuty & IAM</li>
+                <li>Post‑Quantum Cryptography Implementation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="certificates" id="certificates">
+        <h2 class="heading">My <span>Certificates</span></h2>
+        <div class="certificates-container">
+            <div class="certificate-box">
+                <i class='bx bx-certification'></i>
+                <h3>ISC2 Certified in Cybersecurity (CC)</h3>
+            </div>
+            <div class="certificate-box">
+                <i class='bx bx-certification'></i>
+                <h3>Google Cybersecurity Professional Certificate</h3>
+            </div>
+            <div class="certificate-box">
+                <i class='bx bx-certification'></i>
+                <h3>Smart India Hackathon 2023 – Team Leader</h3>
+            </div>
+            <div class="certificate-box">
+                <i class='bx bx-certification'></i>
+                <h3>Kavach 2023 – Finalist</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="mailto:atharvaajan@gmail.com" method="post" enctype="text/plain">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="email" placeholder="Email Address" name="email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number" name="phone">
+                <input type="text" placeholder="Subject" name="subject">
+            </div>
+            <textarea name="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +91 96650 79226</p>
+            <p><strong>Email:</strong> atharvaajan@gmail.com</p>
+            <p><strong>Location:</strong> Pune, India</p>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
